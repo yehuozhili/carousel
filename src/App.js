@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+/*
+ * @Author: yehuozhili
+ * @Date: 2021-09-09 14:01:30
+ * @LastEditors: yehuozhili
+ * @LastEditTime: 2021-09-09 14:35:06
+ * @FilePath: \carousel\src\App.js
+ */
+import "./App.css";
+import { Carousel } from "./Carousel";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Carousel>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+      </Carousel>
     </div>
   );
 }
